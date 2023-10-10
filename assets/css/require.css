@@ -307,7 +307,6 @@ body.loaded {
     0% {
         transform: rotate(0);
     }
-
     100% {
         transform: rotate(1turn);
     }
@@ -399,6 +398,28 @@ body.loaded {
     #FOOTER
   \*-----------------------------------*/
 
+.footer {
+    background-color: var(--jet);
+    color: var(--white_a75);
+    border-block-start: 1px solid var(--white_a10);
+    padding-block: 18px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-block-end: 15px;
+}
+
+.social-link {
+    font-size: 1.8rem;
+}
+
+.social-link:is(:hover, :focus-visible) {
+    color: var(--orange-red);
+}
+
 
 /*-----------------------------------*\
     #MEDIA QUEREIS
@@ -421,33 +442,27 @@ body.loaded {
    */
 
 @media (min-width: 768px) {
-
     /**
      * TYPOGRAPHY
      */
     .headline-lg {
         --fs-45: 6rem;
     }
-
     .headline-md {
         --fs-38: 4.5rem;
     }
-
     .title-md {
         --fs-26: 3.2rem;
     }
-
     /**
      * REUSED STYLE
      */
     .section {
         --section-padding: 100px;
     }
-
     .section-title {
         margin-block-end: 40px;
     }
-
     /**
      * FOOTER
      */
@@ -459,55 +474,45 @@ body.loaded {
    */
 
 @media (min-width: 992px) {
-
     /**
      * TYPOGRAPHY
      */
     .headline-md {
         --fs-38: 5rem;
     }
-
     .title-lg {
         --fs-27: 4rem;
     }
-
     .title-sm {
         --fs-22: 2.4rem;
     }
-
     /**
      * REUSED STYLE
      */
     .section-title {
         margin-block-end: 60px;
     }
-
     /**
      * HEADER
      */
     .nav-toggle-btn {
         display: none;
     }
-
     .navbar,
     .navbar.active,
     .navbar>* {
         all: unset;
         display: block;
     }
-
     .navbar-list {
         display: flex;
     }
-
     .navbar-item:not(:last-child) {
         border-block-end: none;
     }
-
     .navbar-link {
         position: relative;
     }
-
     .navbar-link::after {
         content: "";
         position: absolute;
@@ -520,12 +525,10 @@ body.loaded {
         background-color: var(--orange-red);
         transition: transform var(--transition-1);
     }
-
     .navbar-link:is(:hover, :focus-visible, .active)::after {
         transform: translateX(-50%) scaleX(1);
         transform-origin: left;
     }
-
     .header .btn {
         display: block;
     }
@@ -537,14 +540,12 @@ body.loaded {
    */
 
 @media (min-width: 1200px) {
-
     /**
      * TYPOGRAPHY
      */
     .headline-lg {
         --fs-45: 7rem;
     }
-
     /**
      * REUSED STYLE
      */
