@@ -248,3 +248,29 @@
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+
+/**
+ * responsive for large than 575px screen
+ */
+
+@media (min-width: 575px) {
+    /**
+   * CLIENT, ABOUT & SKILL
+   */
+    .client .slider-item {
+        min-width: calc(33.33% - 20px);
+    }
+    .client .slider-item .w-100,
+    .about-banner,
+    .skill-banner {
+        max-width: max-content;
+        margin-inline: auto;
+    }
+    /**
+   * CTA
+   */
+    .cta .container {
+        justify-content: space-between;
+    }
+}
