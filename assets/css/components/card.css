@@ -70,7 +70,7 @@
     container-type: inline-size;
 }
 
-@media (min-width: 500px) {
+@container (min-width: 500px) {
     .card-lg,
     .card-md {
         flex-direction: row;

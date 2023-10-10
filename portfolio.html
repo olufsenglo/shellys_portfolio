@@ -2,42 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- 
     - primary meta tags
   -->
-    <title>Shelly - Portfolio</title>
-    <meta name="title" content="Shelly - Web Developer Based in Los Angeles" />
-    <meta name="description" content="This is Shelly's personal portfolio" />
+    <title>Shelly | Portfolio</title>
+    <meta name="title" content="Shelly | Portfolio">
+    <meta name="description" content="This is the Shelly's personal portfolio">
 
     <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
     <!-- 
     - google font link
   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/require.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/require.css">
+    <link rel="stylesheet" href="./assets/css/pages/portfolio.css">
 
-    <!-- 
-    - preload images
-  -->
-    <link rel="preload" href="./assets/images/hero-banner.png" />
 </head>
 
 <body>
+
     <!-- 
     - #PRELOADER
   -->
@@ -48,18 +45,20 @@
 
     <!-- 
     - #HEADER
-  -->
+    -->
 
     <header class="header" data-header>
         <div class="container">
-            <a href="#" class="logo">
-                <img src="./assets/images/logo.svg" width="151" height="28" alt="Shelly home" />
+
+            <a href="./index.html" class="logo">
+                <img src="./assets/images/logo.svg" width="151" height="28" alt="Shelly home">
             </a>
 
             <nav class="navbar" data-navbar>
                 <ul class="navbar-list">
+
                     <li class="navbar-item">
-                        <a href="#" class="label-lg navbar-link has-after active">Home</a>
+                        <a href="./index.html" class="label-lg navbar-link has-after">Home</a>
                     </li>
 
                     <li class="navbar-item">
@@ -67,12 +66,13 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="./portfolio.html" class="label-lg navbar-link has-after">Portfolio</a>
+                        <a href="#" class="label-lg navbar-link has-after active">Portfolio</a>
                     </li>
 
                     <li class="navbar-item">
                         <a href="./contact.html" class="label-lg navbar-link has-after">Contact</a>
                     </li>
+
                 </ul>
             </nav>
 
@@ -81,11 +81,17 @@
             <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
       </button>
+
         </div>
     </header>
 
     <main>
         <article>
+
+            <!-- 
+            - #PORTFOLIO
+            -->
+
             <section class="section portfolio" aria-labelledby="portfolio-label">
                 <div class="container">
 
@@ -209,12 +215,14 @@
 
                 </div>
             </section>
+
         </article>
     </main>
 
     <!-- 
     - #FOOTER
-  -->
+    -->
+
     <footer class="footer">
         <div class="container">
 
@@ -260,14 +268,15 @@
 
     <!-- 
     - custom js link
-  -->
+    -->
     <script src="./assets/js/script.js"></script>
 
     <!-- 
     - ionicon
-  -->
+    -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
