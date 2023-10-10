@@ -322,6 +322,7 @@
    * HERO, ABOUT, SKILL
    */
      :is(.hero,
+    .about,
     .skill) .container {
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -335,6 +336,18 @@
     .hero .btn {
         margin-inline: 0;
     }
+    /**
+   * CLIENT
+   */
+    .client .slider-item {
+        min-width: calc(20% - 24px);
+    }
+    /**
+   * SKILL
+   */
+    .skill .container {
+        align-items: flex-start;
+    }
 }
 
 
@@ -346,4 +359,7 @@
     /**
    * ABOUT
    */
+    .about-list {
+        gap: 40px;
+    }
 }
