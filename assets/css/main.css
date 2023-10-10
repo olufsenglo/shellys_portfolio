@@ -336,18 +336,6 @@
     .hero .btn {
         margin-inline: 0;
     }
-    /**
-   * CLIENT
-   */
-    .client .slider-item {
-        min-width: calc(20% - 24px);
-    }
-    /**
-   * SKILL
-   */
-    .skill .container {
-        align-items: flex-start;
-    }
 }
 
 
